@@ -1,0 +1,252 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.6%;
+    box-sizing: border-box;
+}
+
+body {
+    /* font-family: "roboto", sans-serif; */
+    font-family: tahoma;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    font-weight: 400;
+    background-color: rgb(140, 170, 152);
+}
+
+/* container */
+.container {
+    margin: 4rem auto;
+    max-width: 70rem;
+    padding: 0 3rem;
+}
+
+/* alert dynamically added from js */
+.alert {
+    text-align: center;
+    background-color: #b43649;
+    color: #fff;
+    padding: .6rem 1rem;
+    border-radius: 4px;
+}
+
+/* title */
+.expense-title {
+    text-transform: capitalize;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.title-main {
+    font-size: 5rem;
+    font-weight: 500;
+}
+
+.title-sub {
+    font-size: 2rem;
+    font-style: italic;
+    font-weight: 400;
+    margin-top: -.5rem;
+    margin-bottom: 2rem;
+}
+
+#expense-form {
+    border-bottom: 2px solid #ccc;
+}
+
+.form-group {
+    display: flex;
+    margin-bottom: 2rem;
+}
+
+/* form input above */
+.form-input {
+    flex: 1 ;
+    color: #222;
+    margin-left: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    padding: .6rem 1rem;
+    font-size: 1.6rem;
+    border: 4px solid transparent;
+    transition: all .2s;
+}
+
+.form-input:focus {
+    border-bottom: 3px solid #521992;
+    outline: none;
+}
+
+/* select */
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    border: none;
+}
+select {
+    font-size: 1.6rem;
+    width: 11rem;
+    padding: .8rem 1rem;
+    cursor: pointer;
+    color: #222;
+    border-radius: 4px;
+    margin-left: 1.2rem;
+}
+
+.select {
+    position: relative;
+    display: inline-flex;
+}
+
+.select::after {
+    content: "\25BC";
+    position: absolute;
+    padding: .49rem;
+    top: 0;
+    right: 0;
+    color:#fff;
+    background-color: #521992;
+   pointer-events: none;
+   transition: all .3s;
+    
+}
+
+.select:active::after {
+    background-color: #1f043f;
+}
+
+/*  expense btn */
+#expense-btn {
+    display: inline-block;
+    padding: .8rem;
+    width: 32rem;
+    float: right;
+    font-size: 1.6rem;
+    color: #fff;
+    border-radius: 4px;
+    border: none;
+    background-color: #521992;
+    transition: all .3s;
+}
+
+#expense-btn:focus {
+    outline: none;
+}
+
+#expense-btn:active {
+    background-color: #1f043f;
+}
+
+#expenses {
+    border-bottom: 2px solid #ccc;
+    padding: 1.2rem 3rem;
+}
+
+.expenses-title {
+    text-align: center;
+    font-weight: 700;
+}
+
+.expenses-list {
+    list-style: none;
+    margin-bottom: 2rem;
+    margin-top: 1.5rem;
+}
+
+.expenses-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #521992;
+    margin-bottom: 1rem;
+    color: #fff;
+    padding: .4rem 1rem;
+}
+
+
+
+/* expense description  width*/
+.expense-text {
+    flex: 1;
+    margin-right: 2rem;
+}
+
+.expense-amount {
+    flex: 1;
+    margin-right: 2rem;
+}
+
+.expense-link {
+    text-align: right;
+    color: #b43649;
+}
+
+/* clear btn */
+#clear-btn {
+    display: inline-block;
+    padding: 1rem;
+    font-size: 1.6rem;
+    color: #fff;
+    border-radius: 4px;
+    border: none;
+    background-color: #000;
+    /* background-color: #521992; */
+    transition: all .3s;
+}
+
+#clear-btn:active {
+    transform: scaleY(1.06);
+}
+#clear-btn:focus {
+    outline: none;
+}
+
+#clear-btn:hover {
+    background-color: rgb(24, 23, 23);
+}
+
+#expense-calculation {
+    text-align: center;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.form-group-calc {
+    margin-bottom: 2rem;
+}
+
+/* form input at the bottom */
+
+.form-input-calc {
+    color: #222;
+    margin-left: 1.2rem;
+    width: 20rem;
+    border: none;
+    border-radius: 5px;
+    padding: .6rem 1rem;
+    font-size: 1.6rem;
+    border: 4px solid transparent;
+    transition: all .2s;
+    background-color: #fff;
+}
+
+/* to make the middle align */
+.middle {
+    margin-right: .9rem;
+}
+
+.copyright {
+    text-align: center;
+}
+

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- google font -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+    <!-- font-awesome cdn -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <!-- css file -->
+    <link rel="stylesheet" href="style.css">
+    <title>Expense Tracker</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="expense-title">
+            <span class="title-main">Expense Tracker</span>
+            <span class="title-sub">Track Your Expenses</span>
+        </h1>
+        <form id="expense-form">
+            <div class="form-group">
+                <label for="expense-description">Expense Description:</label>
+                <input type="text" placeholder="Enter Description" id="expense-description" class="form-input">
+            </div>
+            <div class="form-group">
+                <label for="expense-amount">Expense Amount ($):</label>
+                <input type="text" placeholder="Enter Amout" id="expense-amount" class="form-input">
+            </div>
+            <div class="form-group select">
+                <label for="expense-select">Income or Outcome:</label>
+                <select id="expense-select">
+                    <option value="all" id="all">All</option>
+                    <option value="income" id="income">Income</option>
+                    <option value="outcome" id="outcome">Outcome</option>
+                </select>
+            </div>
+            <input type="submit" value="Add Expense" id="expense-btn">
+        </form>
+        <div id="expenses">
+            <h2 class="expenses-title">Expenses</h2>
+            <ul class="expenses-list"></ul>
+            <button id="clear-btn">Clear All Expenses</button>
+        </div>
+        <div id="expense-calculation">
+            <div class="form-group-calc">
+                <label for="total-income">Total Income ($):</label>
+                <input type="text" placeholder="0.00" id="total-income" class="form-input-calc" disabled>
+            </div>
+            <div class="form-group-calc">
+                <label for="total-outcome">Total Outcome ($):</label>
+                <input type="text" placeholder="0.00" id="total-outcome" class="form-input-calc middle" disabled>
+            </div>
+            <div class="form-group-calc">
+                <label for="expense-description">Total Balance ($):</label>
+                <input type="text" placeholder="0.00" id="total-balance" class="form-input-calc" disabled>
+            </div>
+        </div>
+        <p class="copyright">&copy; 2020 Olajuwon Sunday & Oluwatosin Akande</p>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
